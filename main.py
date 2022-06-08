@@ -22,8 +22,13 @@ storage.child("word").download("downloaded.jpg")
 app = FastAPI()
 
 
+@app.get('/')
+def home():
+    return {'Olá'}
+
+
 @app.post("/word-to-pdf/{name_id}")
-async def read_root(name_id):
+async def docx_to_pdf(name_id):
     down = f"download/{name_id}"
     up = f"uploads/{name_id[:-5]}.pdf"
 
