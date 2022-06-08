@@ -29,7 +29,6 @@ pydantic==1.9.1
 pyparsing==3.0.9
 python-dotenv==0.20.0
 python-jwt==3.3.2
-pywin32
 PyYAML==6.0
 requests==2.27.1
 requests-toolbelt==0.9.1
@@ -46,3 +45,4 @@ uvicorn==0.17.6
 watchgod==0.8.2
 websockets==10.3
 wrapt==1.14.1
+pywin32==304
